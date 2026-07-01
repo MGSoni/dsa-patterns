@@ -296,7 +296,7 @@ Two or more functions call each other instead of a function calling itself.
 ---
 
 ## Stage 5 — Backtracking
-*Status: ❌ Not covered — highest interview payoff*
+*Status: ✅ Covered  — highest interview payoff*
 
 Recursion that tries a choice, recurses, then undoes the choice and tries the next one. Built entirely on linear/binary recursion shapes you already know, plus an "undo" step.
 
