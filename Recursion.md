@@ -262,11 +262,11 @@ Two recursive calls per step. Base case on `null`, combine `(left result, right 
 |---|---|---|
 | Height of a binary tree | ✅ Solved | `1 + max(height(left), height(right))` |
 | Sum of all node values | ✅ Solved | `node.val + sum(left) + sum(right)` |
+- [✅ ] **Balanced tree check** — combine step must compare heights AND propagate a boolean up, not just a number
+- [✅] **Diameter of a tree** — longest path may not pass through the root; needs an external "best so far" tracked separately from the return value
+- [✅] **State passed down, not just combined up** — e.g. "is this a valid BST" needs min/max bounds passed *into* each call
 
 ### Not yet covered in this pattern
-- [ ] **Balanced tree check** — combine step must compare heights AND propagate a boolean up, not just a number
-- [ ] **Diameter of a tree** — longest path may not pass through the root; needs an external "best so far" tracked separately from the return value
-- [ ] **State passed down, not just combined up** — e.g. "is this a valid BST" needs min/max bounds passed *into* each call
 - [ ] **Path sum problems** — does any root-to-leaf path sum to a target value
 - [ ] **Divide and conquer on arrays** — same two-call shape, applied to merge sort / quick sort instead of trees
 - [ ] **Lowest common ancestor** — combine step returns "found node" information bubbling up
